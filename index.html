@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAID ISSAM HARDAN | The Master Nebula</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- جزيئات الخلفية التفاعلية -->
+    <div class="glow-bg">
+        <div class="ball ball1"></div>
+        <div class="ball ball2"></div>
+        <div class="ball ball3"></div>
+    </div>
+    <canvas id="cyberCanvas"></canvas>
+
+    <!-- شريط التنقل الزجاجي -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">ZAID<span class="pulse-dot"></span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">الرئيسية</a></li>
+                <li><a href="#about">الهوية</a></li>
+                <li><a href="#it-universe">عالم الـ IT</a></li>
+                <li><a href="#gallery">المعرض الرقمي</a></li>
+                <li><a href="#roadmap">خارطة التميز</a></li>
+                <li><a href="#credentials">الاعتمادات</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- واجهة البداية الفاخرة (Hero Section) -->
+    <header id="home" class="hero-section">
+        <div class="hero-wrapper">
+            <div class="hero-text-side">
+                <div class="badge animate-flicker"><span>نظام الحوسبة العملاقة // 2026</span></div>
+                <h1 class="main-title" id="scramble-title">ZAID ISSAM HARDAN</h1>
+                <h2 class="dynamic-subtitle">خبير برمجيات ومطور أنظمة الحوسبة الذكية</h2>
+                <p class="hero-p">أقود ثورة تكنولوجيا المعلومات من جامعة الزرقاء. أدمج بين علوم الحاسوب المتقدمة، وهندسة الأكواد النظيفة بـ Java و Python، وتأمين البيئات الرقمية لبناء مستقبل تقني لا يعرف الحدود.</p>
+                
+                <div class="hero-cta">
+                    <a href="https://linkedin.com/in/%D8%B2%D9%8ي%D8%AF-%D8%AD%D8%B1%D8%AF%D8%A7%D9%86-zaid-hardan/" target="_blank" class="btn-glow"><i class="fab fa-linkedin"></i> الهوية المهنية</a>
+                    <a href="https://github.com/zaidesamhardan-sketch" target="_blank" class="btn-secondary"><i class="fab fa-github"></i> مستودع الأكواد</a>
+                </div>
+            </div>
+            <div class="hero-image-side">
+                <div class="img-frame-container">
+                    <div class="img-frame">
+                        <div class="cube-overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Cyber Architecture" class="main-hero-img">
+                    </div>
+                    <div class="frame-deco"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم الهوية والقيم -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sec-badge">// المحاور العميقة</span>
+                <h2 class="sec-title">فلسفة العمل والوجود التقني</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="hover-card3d glass-panel">
+                    <div class="card-inner">
+                        <div class="card-glow-effect"></div>
+                        <i class="fas fa-brain card-icon"></i>
+                        <h3>الذكاء الاصطناعي العام</h3>
+                        <p>تطوير برمجيات تحاكي العقل البشري لتفكيك المشكلات المعقدة، وابتكار حلول مؤتمتة ترفع كفاءة الحياة اليومية والصناعية.</p>
+                    </div>
+                </div>
+                <div class="hover-card3d glass-panel">
+                    <div class="card-inner">
+                        <div class="card-glow-effect"></div>
+                        <i class="fas fa-layer-group card-icon"></i>
+                        <h3>هندسة النظم الشاملة</h3>
+                        <p>بناء برمجيات متينة قادرة على الصمود وتتحمل الضغط العالي، من خلال تطبيق أعلى معايير الـ OOP ومعماريات السيرفرات المتطورة.</p>
+                    </div>
+                </div>
+                <div class="hover-card3d glass-panel">
+                    <div class="card-inner">
+                        <div class="card-glow-effect"></div>
+                        <i class="fas fa-mosque card-icon"></i>
+                        <h3>الأثر الأخلاقي والمبادئ</h3>
+                        <p>العلم والتقنية هما رسالة لإعمار الأرض وترك بصمة نفع حقيقية مستمدة من القيم الأخلاقية والدينية الراسخة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم تشريح الـ IT وعالم التخصصات -->
+    <section id="it-universe" class="it-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sec-badge">// خريطة المعرفة</span>
+                <h2 class="sec-title">قارة تكنولوجيا المعلومات (IT Map)</h2>
+            </div>
+
+            <div class="it-grid">
+                <div class="it-card card-reveal">
+                    <div class="it-icon-header"><i class="fas fa-code"></i></div>
+                    <h3>هندسة البرمجيات</h3>
+                    <p>المعمار الرقمي. تركز على دورة حياة النظام الكاملة وبناء الأكواد المتينة وإدارة السيرفرات لضمان كفاءة الأنظمة وخلوها من الأخطاء البرمجية.</p>
+                    <span class="it-tag-spec">الهيكلة والبناء</span>
+                </div>
+                <div class="it-card highlight card-reveal">
+                    <div class="it-icon-header"><i class="fas fa-microchip"></i></div>
+                    <h3>الذكاء الاصطناعي (AI)</h3>
+                    <p>صناعة الإدراك الرقمي. بناء الشبكات العصبية وخوارزميات تعلم الآلة لتمكين الأنظمة من التنبؤ، اتخاذ القرارات وفهم اللغات الطبيعية.</p>
+                    <span class="it-tag-spec">هندسة العقول</span>
+                </div>
+                <div class="it-card card-reveal">
+                    <div class="it-icon-header"><i class="fas fa-user-shield"></i></div>
+                    <h3>الأمن السيبراني</h3>
+                    <p>خط الدفاع الأول بالحصون الرقمية. يتخصص في اختبار الاختراق الأخلاقي وسد الثغرات وتشفير البيانات لحمايتها من الهجمات التخريبية.</p>
+                    <span class="it-tag-spec">الحماية والدفاع</span>
+                </div>
+                <div class="it-card card-reveal">
+                    <div class="it-icon-header"><i class="fas fa-chart-pie"></i></div>
+                    <h3>علم وتحليل البيانات</h3>
+                    <p>استقراء المستقبل الرقمي. استخراج الأنماط الإحصائية من مخازن البيانات العملاقة لمساعدة المؤسسات على اتخاذ قرارات مصيرية دقيقة.</p>
+                    <span class="it-tag-spec">تعدين الكنوز</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم معرض الصور التقني الجبار (Cyber Gallery) -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sec-badge">// الفن الرقمي</span>
+                <h2 class="sec-title">معرض الترسانة والبيئة السيبرانية</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80" alt="Cyber Security">
+                    <div class="gallery-overlay"><span>الأمن السيبراني ونفق Ngrok</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=600&q=80" alt="Programming Java">
+                    <div class="gallery-overlay"><span>تطوير الخوارزميات بـ Java Core</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1527474305487-b87b222841cc?auto=format&fit=crop&w=600&q=80" alt="AI Engine">
+                    <div class="gallery-overlay"><span>نماذج الشبكات العصبية والذكاء الاصطناعي</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم خارطة بناء المبرمج العظيم (The Roadmap) -->
+    <section id="roadmap" class="roadmap-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sec-badge">// مسار العمالقة</span>
+                <h2 class="sec-title">خارطة طريق بناء مبرمج عظيم</h2>
+            </div>
+
+            <div class="timeline-cyber">
+                <div class="timeline-item">
+                    <div class="tl-number">01</div>
+                    <div class="tl-content">
+                        <h3>التفكير الخوارزمي و Problem Solving</h3>
+                        <p>تفكيك المشاكل المعقدة إلى أجزاء صغيرة واستخدام هياكل البيانات لضمان كود برميجي يستهلك أقل مساحة وأعلى سرعة معالجة ممكنة.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-number">02</div>
+                    <div class="tl-content">
+                        <h3>إتقان المعمارية الصلبة والـ OOP</h3>
+                        <p>تعلم البرمجة كائنية التوجه والـ Design Patterns لفهم كيفية إدارة الذاكرة العشوائية والسيرفرات بكفاءة هندسية تامة.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-number">03</div>
+                    <div class="tl-content">
+                        <h3>التعلم الذاتي المستمر ومستودعات الأكواد</h3>
+                        <p>تطوير مشاريع حية كاملة ورفعها على GitHub لتكوين معرض أعمال تقني حقيقي ومواكبة التحديثات من التوثيقات الرسمية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الشهادات والتعليم والعمل التطوعي -->
+    <section id="credentials" class="credentials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sec-badge">// السجلات الرسمية</span>
+                <h2 class="sec-title">التعليم، الاعتمادات والخدمة المجتمعية</h2>
+            </div>
+
+            <div class="edu-grid">
+                <div class="edu-card glass-panel">
+                    <span class="edu-tag"><i class="fas fa-university"></i> 2024 - 2028</span>
+                    <h3>جامعة الزرقاء (Zarqa University)</h3>
+                    <h4>بكالوريوس تكنولوجيا المعلومات - هندسة البرمجيات</h4>
+                    <p>دراسة معمقة للمبادئ الهندسية، أنظمة تشغيل العتاد، والتحليلات الرقمية البرمجية المتقدمة.</p>
+                </div>
+
+                <div class="cert-box-wrapper glass-panel">
+                    <h3>الشهادات العالمية المعتمدة من Cisco <i class="fas fa-certificate text-cyan"></i></h3>
+                    <ul class="cert-list">
+                        <li>
+                            <div class="cert-icon"><i class="fab fa-python"></i></div>
+                            <div>
+                                <strong>Data Science Essentials With Python</strong>
+                                <p>Cisco Academy - صادر في 2026</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
+                            <div>
+                                <strong>Data Analytics Essentials</strong>
+                                <p>Cisco Academy - صادر في 2026</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="vol-wrapper glass-panel">
+                <div class="vol-badge"><i class="fas fa-handshake-angle"></i> العمل التطوعي والمسؤولية اللوجستية</div>
+                <h3>منصة نحن (Nahno) | عضو الفريق اللوجستي الميداني</h3>
+                <p class="vol-date">يناير 2025</p>
+                <div class="vol-details">
+                    <p><i class="fas fa-check-circle"></i> تنظيم وتحضير الإمدادات والوجبات الغذائية بكفاءة متناهية وضمان تقديمها وفق أعلى معايير الجودة.</p>
+                    <p><i class="fas fa-check-circle"></i> إدارة المخزون الداخلي بذكاء لمنع أي خلل تشغيلي في سلاسل التوريد الميدانية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- شات بوت ChatGPT الخارق الشامل المتطور (Omni Omni-Brain AI) -->
+    <div class="ai-chat-widget" id="aiChatWidget">
+        <div class="chat-header" onclick="toggleChat()">
+            <div class="header-info">
+                <div class="chat-status-dot"></div>
+                <span>Zaid ChatGPT Omni-Brain v3.0</span>
+            </div>
+            <i class="fas fa-chevron-up" id="chatChevron"></i>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="msg ai-msg">أهلاً بك في نظام الذكاء الاصطناعي العام الشامل! 🧠✨ أنا مبرمج ومزود بـ **محاكي لغوي ذكي ضخم (LLM Engine)**. يمكنك سؤالي عن أي شيء بالكون: (برمجة، طبخ، فيزياء، تاريخ، أدب، نصائح، أو معلومات عن المهندس زيد حردان). اختبر ذكائي الآن واسألني أي شيء يخطر ببالك!</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chatInput" placeholder="اسألني عن أي شيء بالدنيا (أنا كـ ChatGPT)..." onkeypress="handleChatKey(event)">
+            <button onclick="sendChatMessage()"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- التواصل السريع عبر واتساب -->
+    <a href="https://wa.me/962781080893" class="whatsapp-float" target="_blank" title="تواصل مباشر">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- فوتر مستقبلي -->
+    <footer class="cyber-footer">
+        <p>© 2026 المهندس زيد عصام حردان. تم إطلاق المعمار البرمجي بأعلى درجات القوة والاتزان الرقمي.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
